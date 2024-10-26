@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    background-color: #636363;
+}
+
+.carrossel-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.carrossel {
+    position: relative; 
+    width: 100%;
+    height: 100%;
+}
+
+.carrossel img {
+    position: absolute;
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+    opacity: 0; 
+    transition: opacity 1s ease; 
+}
+
+
+.carrossel img.active {
+    opacity: 0.3; 
+}
+
+.carrossel-container {
+    position: relative; 
+    width: 100%;
+    height: 100vh; 
+    overflow: hidden; 
+}
+
+.carrossel {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.carrossel img {
+    position: absolute; 
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; 
+    object-position: top;
+    opacity: 0; 
+    transition: opacity 1s ease; 
+}
+
+.carrossel img.active {
+    opacity: 0.3; 
+}
+
+.topo-container {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    z-index: 2; 
+    width: 15%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 30px rgba(0, 47, 255, 0.27);
+    border: 1px solid rgba(0, 47, 255, 0.27);
+}
+
+.topo-logo {
+    width: 250px;
+    height: 250px;
+}
+
+.topo-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.logo-item {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.logo-face,
+.logo-ins {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+}
+
+.fa-facebook,
+.fa-instagram {
+    color: #fff;
+    font-size: 36px;
+    text-decoration: none;
+}
+
+.menu-container {
+    width: 100%;
+    height: 120vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #F0910A;
+    gap: 30px;
+}
+
+.menu-title {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 0 4px 10px rgb(255, 255, 255);
+}
+
+.topo-imagem {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 100%;
+    max-width: 1200px;
+    justify-content: center;
+    justify-items: center;
+}
+
+.imagem-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.imagem-container img {
+    width: 250px;
+    height: 420px;
+    object-fit: cover;
+    clip-path: polygon(5% 0%, 100% 5%, 95% 100%, 0% 95%);
+}
+
+.info-button {
+    position: absolute;
+    top: 10px; 
+    right: 10px;
+    background-color: #F0910A;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    clip-path: polygon(5% 0%, 100% 5%, 95% 100%, 0% 95%);
+}
+
+.imagem-container.active .overlay {
+    opacity: 1;
+}
+
+.overlay-text {
+    color: #fff;
+    text-align: center; 
+    padding: 10px;
+    font-size: 14px;
+}
+
+.video-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;
+    height: 100vh;
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+.video-wrapper {
+    display: grid; 
+    grid-template-columns: repeat(4, 1fr); 
+    justify-items: center; 
+    gap: 20px; 
+}
+
+.video-title {
+    color: #fff;
+    font-size: 42px;
+    font-weight: 700;
+    text-shadow: 0 4px 10px rgb(255, 255, 255);
+}
