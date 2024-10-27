@@ -36,3 +36,4 @@ infoButtons.forEach(button => {
         }
     });
 });
+

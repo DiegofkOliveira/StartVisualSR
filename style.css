@@ -78,8 +78,6 @@ body {
     justify-content: center;
     padding: 20px;
     backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 30px rgba(0, 47, 255, 0.27);
-    border: 1px solid rgba(0, 47, 255, 0.27);
 }
 
 .topo-logo {
@@ -113,27 +111,45 @@ body {
 
 .fa-facebook,
 .fa-instagram {
-    color: #fff;
+    color: #000;
     font-size: 36px;
     text-decoration: none;
+    transition: all 1s;
+}
+
+.fa-facebook:hover,
+.fa-instagram:hover {
+    color: #F0910A;
+    text-decoration: none;
+    transition: all 1s;
 }
 
 .menu-container {
     width: 100%;
-    height: 120vh;
+    height: 200vh;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #F0910A;
-    gap: 30px;
+    background-color: #f7f7f7;
+    gap: 30px;  
 }
 
 .menu-title {
-    color: #fff;
-    font-size: 42px;
+    color: #F0910A;
+    font-size: 30px;
+    font-weight: 300;
+    padding-top: 20px;
+    border-top: 2px solid orange;
+}
+
+.menu-text {
+    color: #F0910A;
+    font-size: 32px;
     font-weight: 700;
-    text-shadow: 0 4px 10px rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    width: 50%;
 }
 
 .topo-imagem {
@@ -187,7 +203,7 @@ body {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity 0.3s ease;
+    transition: opacity 1s ease;
     z-index: 1;
     clip-path: polygon(5% 0%, 100% 5%, 95% 100%, 0% 95%);
 }
@@ -204,14 +220,15 @@ body {
 }
 
 .video-container {
+    background-color: #f7f7f7;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center; 
     width: 100%;
-    height: 100vh;
+    height: 160vh;
     gap: 20px;
-    padding: 20px 50px;
+    padding-top: 20px;
 }
 
 .video-wrapper {
@@ -222,8 +239,63 @@ body {
 }
 
 .video-title {
-    color: #fff;
-    font-size: 42px;
+    color: #F0910A;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px;
+    border-top: 2px solid orange;
+}
+
+.video-text {
+    color: #F0910A;
+    font-size: 32px;
     font-weight: 700;
-    text-shadow: 0 4px 10px rgb(255, 255, 255);
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+.text-different {
+    color: #ff370f;
+    font-size: 34px;
+}
+
+.logo-container {
+    position: relative;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 50px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo-title {
+    width: 40%;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 300;
+    padding: 20px;
+    border-top: 2px solid white;
+}
+
+.logo-list {
+    display: flex;
+    gap: 20px;
+}
+
+.logo-item {
+    min-width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-item img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3/2;
+    object-fit: contain;
 }
