@@ -37,3 +37,40 @@ infoButtons.forEach(button => {
     });
 });
 
+document.addEventListener("DOMContentLoaded", () => {
+    const counters = document.querySelectorAll(".stat-number");
+    
+    // Função para iniciar a contagem
+    const startCount = (counter) => {
+        const target = +counter.getAttribute("data-target");
+        let count = 0;
+
+        const updateCount = () => {
+            count += Math.ceil(target / 100); // Velocidade da contagem
+            if (count < target) {
+                counter.innerText = `+${count}`;
+                setTimeout(updateCount, 20);
+            } else {
+                counter.innerText = `+${target}`;
+            }
+        };
+
+        updateCount();
+    };
+
+    // Observador para verificar quando a div está visível
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                counters.forEach(counter => {
+                    counter.innerText = "0"; // Zera o valor antes de contar
+                    startCount(counter); // Inicia a contagem
+                });
+            }
+        });
+    });
+
+    // Observa a div .stats-container
+    const statsContainer = document.querySelector(".stats-container");
+    observer.observe(statsContainer);
+});

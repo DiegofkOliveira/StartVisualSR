@@ -7,6 +7,11 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&family=Poppins:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="icon" href="./Imagens/IconStart.ico" type="image/x-icon">
@@ -32,15 +37,17 @@
         <img class="topo-logo" src="./Imagens/Logo.png" alt="Imagem Logo">
         <div class="topo-list">
             <ul class="logo-item">
-                <a class="logo-face" href=""><i class="fa-brands fa-facebook"></i></a>
-                <a class="logo-ins" href=""><i class="fa-brands fa-instagram"></i></a>
+                <a class="logo-face" href="https://www.facebook.com/visualstart/"><i
+                        class="fa-brands fa-facebook"></i></a>
+                <a class="logo-ins" href="https://www.instagram.com/start_com_visual/"><i
+                        class="fa-brands fa-instagram"></i></a>
             </ul>
         </div>
     </div>
 
     <div class="menu-container">
         <h1 class="menu-title">Serviços</h1>
-        <p class="menu-text">Desde <span class="text-different">adesivos a fachadas</span> em ACM somos especalizados no
+        <p class="menu-text">Desde <span class="text-different">adesivos a fachadas em ACM</span> somos especalizados no
             que fazemos!!!</p>
         <div class="topo-imagem">
             <div class="imagem-container">
@@ -111,11 +118,30 @@
             </div>
         </div>
     </div>
+
+    <div class="stats-container">
+        <div class="stat-item">
+            <i class="fa-solid fa-users"></i>
+            <h3 class="stat-number" data-target="150">0</h3>
+            <p>Clientes</p>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-layer-group"></i>
+            <h3 class="stat-number" data-target="2000">0</h3>
+            <p>Chapas ACM</p>
+        </div>
+        <div class="stat-item">
+            <i class="fa-solid fa-ruler-combined"></i>
+            <h3 class="stat-number" data-target="5000">0</h3>
+            <p>Metros de Adesivos Impressos</p>
+        </div>
+    </div>
+
     <div class="video-container">
         <h1 class="video-title">Galeria</h1>
         <p class="video-text">Buscando sempre <span class="text-different">qualidade e satisfação</span> dos nosso
             clientes atendemos diversos arquitetos de nossa região, e
-            nos empenhamos ao máximo para manter a originalidade dos seu projetos.</p>
+            nos empenhamos ao máximo para manter a originalidade dos seus projetos.</p>
         <div class="video-wrapper">
             <video src="./Video/VideoFachada 2.mp4" muted autoplay loop width="270px" height="500px"></video>
             <video src="./Video/VideoFachada 1.mp4" muted autoplay loop width="270px" height="500px"></video>
@@ -126,14 +152,77 @@
     <div class="logo-container">
         <h1 class="logo-title">Alguns de nossos clientes</h1>
         <div class="logo-list">
-            <div class="logo-item"><img src="./Imagens/Logo-Empresas/Apple-Mania-remove.png" alt="Logo Cliente 1"></div>
-            <div class="logo-item"><img src="./Imagens/Logo-Empresas/Logo-DivinaDiva-remove.png" alt="Logo Cliente 2"></div>
-            <div class="logo-item"><img src="./Imagens/Logo-Empresas/Logo-Engewatt-remove.png" alt="Logo Cliente 3"></div>
-            <div class="logo-item"><img src="./Imagens/Logo-Empresas/Logo-MaisNatural-remove.png" alt="Logo Cliente 4"></div>
-            <div class="logo-item"><img src="./Imagens/Logo-Empresas/Logo-MPE-remove.png" alt="Logo Cliente 5"></div>
-            <div class="logo-item"><img src="./Imagens/Logo-Empresas/Logo-ODD-remove.png" alt="Logo Cliente 5"></div>
-            <div class="logo-item"><img src="./Imagens/Logo-Empresas/Logo-Taborda.png" alt="Logo Cliente 5"></div>
-            <!-- Adicione mais logos conforme necessário -->
+            <div class="logo-item">
+                <img src="./Imagens/Logo-Empresas/Apple-Mania-remove.png" alt="Logo Cliente 1">
+            </div>
+            <div class="logo-item">
+                <img src="./Imagens/Logo-Empresas/Logo-DivinaDiva-remove.png" alt="Logo Cliente 2">
+            </div>
+            <div class="logo-item">
+                <img src="./Imagens/Logo-Empresas/Logo-Engewatt-remove.png" alt="Logo Cliente 3">
+            </div>
+            <div class="logo-item">
+                <img src="./Imagens/Logo-Empresas/Logo-MaisNatural-remove.png" alt="Logo Cliente 4">
+            </div>
+            <div class="logo-item">
+                <img src="./Imagens/Logo-Empresas/Logo-MPE-remove.png" alt="Logo Cliente 5">
+            </div>
+            <div class="logo-item">
+                <img src="./Imagens/Logo-Empresas/Logo-ODD-remove.png" alt="Logo Cliente 5">
+            </div>
+            <div class="logo-item">
+                <img src="./Imagens/Logo-Empresas/Logo-Taborda.png" alt="Logo Cliente 5">
+            </div>
+        </div>
+    </div>
+    <div class="contact-container">
+        <div class="contact-title-wrapper">
+            <i class="fab fa-whatsapp" style="font-size: 50px; color: #25D366;"></i>
+            <h1 class="contact-title">Entre em Contato com nosso comercial</h1>
+        </div>
+        <div class="contact-item">
+            <a href="https://wa.me/5555999759833" target="_blank" class="contact-link">
+                <div class="image-wrapper">
+                    <img src="https://scontent.fsra1-1.fna.fbcdn.net/v/t39.30808-6/311862714_5774760449235342_661976032503207094_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_ohc=hi0rjg0TPBoQ7kNvgHP118U&_nc_zt=23&_nc_ht=scontent.fsra1-1.fna&_nc_gid=A55FL-q3RqgJLUbVXQ5Vl03&oh=00_AYAUUWtYTnjfXxeL-VWUO8EmjmkBtOSDHOyuxTEFxOfnbw&oe=6726030E"
+                        alt="Foto de Jhonatas">
+                </div>
+                <h1>Jhonatas Machado</h1>
+            </a>
+            <a href="https://wa.me/5555996927111" target="_blank" class="contact-link">
+                <div class="image-wrapper">
+                    <img src="https://media-gru1-2.cdn.whatsapp.net/v/t61.24694-24/377526338_322035780504591_2624031715430995974_n.jpg?ccb=11-4&oh=01_Q5AaIOPMIdTWq_6NIv3cfgT3yMw9m1Hjskmv3Z2LnZSkAx2t&oe=672A18AC&_nc_sid=5e03e0&_nc_cat=107"
+                        alt="Foto">
+                </div>
+                <h1>Cristian Santos</h1>
+            </a>
+        </div>
+    </div>
+
+    <div class="footer-container">
+        <div class="footer-list">
+            <div class="footer-item">
+                <div class="footer-header">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <h1>Endereço</h1>
+                </div>
+                <p>Avenida Borges de Medeiros, 616 - Centro, Santa Rosa - RS, 98790-001</p>
+            </div>
+            <div class="footer-item">
+                <h1 class="footer-text">Nos siga nas redes sociais</h1>
+                <div class="footer-sociais">
+                    <a href="https://www.facebook.com/visualstart/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/start_com_visual/"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-maps">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3656.640029099395!2d-54.19721028519066!3d-28.29500148247798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94933169ec6aa72f%3A0x6e36835c647ca4bc!2sAvenida%20Borges%20de%20Medeiros%2C%20616%20-%20Centro%2C%20Santa%20Rosa%20-%20RS%2C%2098790-001!5e0!3m2!1spt-BR!2sbr!4v1689800816103!5m2!1spt-BR!2sbr"
+                width="400" height="300" style="border:5px solid white; border-radius: 10px;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2024 Todos os direitos reservados a startvisualsr.com.br. Desenvolvido por <a href="https://www.instagram.com/diegofkoliveira/" target="_blank" class="instagram-link">diegofkoliveira</a>.</p>
         </div>
     </div>
 
