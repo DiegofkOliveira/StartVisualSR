@@ -38,7 +38,7 @@ infoButtons.forEach(button => {
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-    const counters = document.querySelectorAll(".stat-number");
+    const counters = document.querySelectorAll(".stats-number");
     
     // Função para iniciar a contagem
     const startCount = (counter) => {
