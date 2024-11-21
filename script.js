@@ -66,7 +66,7 @@ document.addEventListener("DOMContentLoaded", () => {
                         counter.innerText = "0";  // Reseta o contador para 0
                         startCount(counter);      // Inicia a contagem
                     });
-                }, 2500); // 1000ms = 1 segundo de atraso
+                }, 1000); // 1000ms = 1 segundo de atraso
             }
         });
     });
@@ -78,12 +78,12 @@ document.addEventListener("DOMContentLoaded", () => {
 
 const elements = [
     { selector: '.imagem-container', delay: 0.6 },
-    { selector: '.video-wrapper video', delay: 0.9 },
+    { selector: '.video-wrapper video', delay: 0.7 },
     { selector: '.logo-item', delay: 0.9 },
     { selector: '.stats-item', delay: 0.9 },
     { selector: '.contact-wrapper', delay: 0.9 },
-    { selector: '.contact-link', delay: 0.9 },
-    { selector: '.footer-item', delay: 0.9 },
+    { selector: '.contact-link', delay: 0.7 },
+    { selector: '.footer-item', delay: 0.3 },
     { selector: '.footer-location', delay: 1 }
 ];
 
