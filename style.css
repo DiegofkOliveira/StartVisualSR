@@ -342,14 +342,14 @@ body {
 
 .logo-container {
     width: 100%;
-    height: 40vh;
+    height: 60vh;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     justify-items: center;
     justify-content: center;
     align-items: center;
-    gap: 30px;
-    padding: 50px 300px;
+    gap: 10px;
+    padding: 50px 500px;
     background-color: #f0f0f0;
 }
 
@@ -375,7 +375,7 @@ body {
 
 .logo-icon {
     font-size: 48px;
-    color: #ff914d;
+    color: #1ebe59;
     margin-bottom: 10px;
 }
 
@@ -437,7 +437,7 @@ body {
     grid-template-columns: repeat(1, 2fr);
     justify-items: center;
     width: 400px;
-    gap: 100px;
+    gap: 80px;
 }
 
 .contact-link {
@@ -525,7 +525,7 @@ body {
     width: 100%;
     opacity: 0;
     transform: translateZ(150px); 
-    transition: opacity 2s ease, transform 3s ease; 
+    transition: opacity 2s ease, transform 3s ease;
 }
 
 .footer-item.show {
@@ -656,6 +656,7 @@ body {
     .menu-item {
         grid-template-columns: repeat(2, 2fr);
         gap: 10px;
+        max-width: 550px;
     }
 
     .imagem-container img {
@@ -800,10 +801,10 @@ body {
         grid-template-columns: repeat(1, 2fr);
         place-items: center;
         width: 100%;
-        height: 120vh;
+        height: auto;
         position: relative;
         background: linear-gradient(to bottom, #022e66, #0156ff, #1ebe59);
-        padding: 20px;
+        padding: 100px 20px;
     }
 
     .footer-list {
@@ -848,7 +849,7 @@ body {
     }
 
     .footer-header h1 {
-        font-size: 22px;
+        font-size: 28px;
         color: #f7f7f7;
         font-weight: 500;
         text-align: center;
@@ -856,7 +857,8 @@ body {
     }
 
     .footer-item p {
-        font-size: 18px;
+        width: 500px;
+        font-size: 24px;
         color: #f7f7f7;
         text-align: center;
     }
@@ -864,7 +866,7 @@ body {
     .footer-text {
         width: 350px;
         height: 40px;
-        font-size: 22px;
+        font-size: 28px;
         font-weight: 500;
         color: #f7f7f7;
         border-bottom: none;
@@ -888,8 +890,7 @@ body {
     }
 }
 
-
-@media (max-width: 480px) {
+@media (min-width: 380px) and (max-width: 480px) {
 
     .carrossel-container {
         height: 102vh;
@@ -939,8 +940,6 @@ body {
     .overlay-text {
         font-size: 10px;
     }
-
-
 
     .stats-container {
         gap: 20px;
@@ -1046,6 +1045,7 @@ body {
 
     .contact-wrapper {
         border-right: none;
+        height: 100px;
     }
 
     .contact-title {
@@ -1091,7 +1091,7 @@ body {
         height: auto;
         position: relative;
         background: linear-gradient(to bottom, #022e66, #0156ff, #1ebe59);
-        padding: 200px 30px 50px;
+        padding: 60px 30px 50px;
     }
 
     .footer-list {
@@ -1176,5 +1176,314 @@ body {
         height: 300px;
         border: 5px solid white;
         border-radius: 10px;
+    }
+
+    .copyright {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .copyright p {
+        width: 80%;
+        padding: 0 20px;
+        color: #000;
+        font-size: 12px;
+    }
+}
+
+
+@media (max-width: 380px) {
+
+    .carrossel-container {
+        height: 102vh;
+    }
+
+    .topo-logo {
+        width: 100px;
+        height: 100px;
+    }
+
+    .fa-facebook,
+    .fa-instagram {
+        font-size: 24px;
+    }
+
+    .menu-container {
+        height: auto;
+        padding: 200px 20px;
+    }
+
+    .menu-title {
+        font-size: 24px;
+    }
+
+    .menu-text {
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .menu-item {
+        grid-template-columns: repeat(2, 2fr);
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .imagem-container img {
+        width: 130px;
+        height: 250px;
+    }
+
+    .info-button {
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+    }
+
+    .overlay-text {
+        font-size: 9px;
+    }
+
+    .stats-container {
+        gap: 20px;
+        padding: 50px 10px;
+    }
+
+    .stats-item {
+        width: 80px;
+        height: 150px;
+        padding-top: 10px;
+        justify-content: start;
+        transform: translateX(-100px); 
+    }
+
+    .stats-item i {
+        font-size: 36px;
+        color: #ff914d;
+        margin-bottom: 10px;
+    }
+
+    .stats-number {
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    .stats-item p {
+        font-size: 14px;
+        width: 100px;
+    }
+
+    .video-container {
+        height: auto;
+        gap: 0;
+        padding: 200px 50px;
+    }
+
+    .video-wrapper {
+        grid-template-columns: repeat(2, 2fr);
+        gap: 20px;
+    }
+
+    .video-title {
+        font-size: 26px;
+    }
+
+    .video-text {
+        font-size: 20px;
+        font-weight: 500;
+        width: auto;
+    }
+
+    .text-different {
+        font-size: 20px;
+    }
+
+    .video-wrapper video {
+        width: 150px;
+        height: 300px;
+    }
+
+    .logo-container {
+        height: auto;
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-content: center;
+        align-items: center;
+        padding: 150px 20px;
+        gap: 20px;
+    }
+
+    .logo-item {
+        height: auto;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .logo-icon {
+        font-size: 42px;
+        margin-bottom: 10px;
+    }
+
+    .logo-title {
+        font-size: 30px;
+    }
+
+    .logo-item p {
+        font-size: 16px;
+        width: 100%;
+    }
+
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+        gap: 20px;
+    }
+
+    .contact-wrapper {
+        border-right: none;
+        height: 100px;
+    }
+
+    .contact-title {
+        font-size: 24px;
+    }
+
+    .contact-item {
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: 320px;
+        gap: 20px;
+        padding-bottom: 50px;
+    }
+
+    .contact-link {
+        width: 320px;
+        height: 60px;
+    }
+
+    .contact-item h1 {
+        font-size: 24px;
+        font-weight: 500;
+    }
+
+    .image-wrapper {
+        width: 40px;
+        height: 40px;
+        margin-right: 10px;
+    }
+
+    .image-wrapper img {
+        position: relative;
+        width: 60px;
+        height: 60px;
+    }
+
+    .footer-container {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        place-items: center;
+        width: 100%;
+        height: auto;
+        position: relative;
+        background: linear-gradient(to bottom, #022e66, #0156ff, #1ebe59);
+        padding: 60px 30px 50px;
+    }
+
+    .footer-list {
+        display: grid;
+        grid-template-columns: repeat(1, 2fr);
+        place-items: center;
+        width: 100%;
+        gap: 20px;
+    }
+
+    .footer-item {
+        width: 300px;
+        height: 150px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 0px;
+        width: 100%;
+        justify-items: center;
+        padding: 20px;
+    }
+
+    .footer-sociais {
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        width: 300px;
+        justify-content: center;
+    }
+
+    .footer-header {
+        width: 350px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        padding: 10px;
+        border-bottom: none;
+    }
+
+    .fa-location-dot {
+        font-size: 22px;
+        color: #f7f7f7;
+    }
+
+    .footer-header h1 {
+        font-size: 20px;
+        color: #f7f7f7;
+        font-weight: 500;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .footer-item p {
+        width: 300px;
+        font-size: 16px;
+        color: #f7f7f7;
+        text-align: center;
+    }
+
+    .footer-text {
+        width: 350px;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        color: #f7f7f7;
+        border-bottom: none;
+        text-align: center;
+    }
+
+    .footer-item .footer-icon {
+        font-size: 30px;
+        color: #f7f7f7;
+    }
+
+    .footer-item .footer-icon:hover {
+        color: #F0910A;
+    }
+
+    .footer-location {
+        width: 300px;
+        height: 250px;
+        border: 5px solid white;
+        border-radius: 10px;
+    }
+
+    .copyright p {
+        padding: 0 20px;
+        color: #000;
+        font-size: 12px;
     }
 }
